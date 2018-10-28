@@ -1,0 +1,8 @@
+{
+  "name": "demo-app-vs.1",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "8a3e3cea"
+}
