@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ultimele Stiri</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+   
+  <ion-card *ngFor="let article of data?.articles" (click)="newsSinglePage(article)">
+    <ion-img [src]="article.urlToImage"></ion-img>
+    <ion-card-header>
+        <ion-card-title>{{article.title}}</ion-card-title>
+        <p>{{article.source.name}}</p>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
